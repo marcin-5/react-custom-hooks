@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { ImageList } from "./components/ImageList/ImageList";
 import s from "./App.module.css";
+import { ImageList } from "./components/ImageList/ImageList";
 
 export function App() {
   const [imageList, setImageList] = useState(DATA);
+  
   return (
     <div className={s.root}>
       <h1>Rand'images</h1>
