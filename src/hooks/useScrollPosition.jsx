@@ -7,7 +7,7 @@ export function useScrollPosition() {
     window.addEventListener("scroll", () => {
       setIsBottom(
         window.innerHeight + document.documentElement.scrollTop >=
-          document.documentElement.offsetHeight
+          document.documentElement.offsetHeight - 1
       );
     });
   }, []);
